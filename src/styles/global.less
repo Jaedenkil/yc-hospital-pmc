@@ -1,0 +1,129 @@
+@import './variables.less';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5715;
+  color: @text-1;
+  background: @bg-page;
+  -webkit-font-smoothing: antialiased;
+}
+
+// 大屏（≥1920）整体放大一档，保证 3 米外可读
+@media (min-width: 1920px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+// ------- 通用卡片 -------
+.pmc-card {
+  background: @bg-card;
+  border-radius: @radius;
+  box-shadow: 0 1px 2px rgba(31, 35, 41, 0.04), 0 2px 8px rgba(31, 35, 41, 0.04);
+}
+
+// ------- 页面容器（统一内边距与最大宽度） -------
+.pmc-page {
+  padding: 16px 20px 24px;
+  min-width: 1180px; // 低于此宽度出现横向滚动，避免表格挤压变形
+}
+
+// ------- 布局工具类：让页面占满右侧内容区的剩余高度 -------
+// 用法（三者搭配）：
+//   .pmc-page-fill          页面根容器 —— 占满内容区高度，纵向排布
+//   .pmc-fill               需要占满剩余空间的卡片 —— 自身纵向排布
+//   .pmc-scroll             卡片内的滚动区 —— 占满剩余高度并在内部滚动
+// 注意：只有加在这三类元素上才会生效，未加类的页面保持原有"按内容自然增高"行为。
+.pmc-page-fill {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.pmc-fill {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pmc-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+// ------- 统计数字（KPI） -------
+.pmc-metric {
+  font-family: 'DIN Alternate', 'Barlow', 'Helvetica Neue', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+// ------- 滚动条样式（大屏观感统一） -------
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(31, 35, 41, 0.16);
+  border-radius: 4px;
+
+  &:hover {
+    background: rgba(31, 35, 41, 0.28);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+// ------- 弹窗：高度随视口自适应，超出部分在正文区内部滚动 -------
+// 标题栏与底部按钮固定在两端，正文区占满剩余高度并在内部滚动，
+// 避免长表单 / 长列表把弹窗顶出屏幕（不同分辨率下自动收缩）。
+// 预留 140px = antd 默认顶部间距 100px + 底部安全余量，保证弹窗完整落在视口内。
+.ant-modal-content {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 140px);
+}
+
+.ant-modal-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+// ------- 打印：只打印报表主体（供"打印/导出 PDF"使用） -------
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
+.print-only {
+  display: none;
+}

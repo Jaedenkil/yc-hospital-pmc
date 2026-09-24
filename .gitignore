@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-single
+*.local
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Reasonix 工具目录与交付产物（不入库）
+.reasonix/
+delivery/
+*.zip
