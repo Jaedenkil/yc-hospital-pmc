@@ -104,7 +104,7 @@ export function printTable(spec: PrintTableSpec) {
   <h1>${esc(spec.title)}</h1>
   ${spec.subtitle ? `<div class="sub">${esc(spec.subtitle)}</div>` : ''}
   <table><thead><tr>${headerHtml}</tr></thead><tbody>${bodyHtml}</tbody></table>
-  <div class="foot"><span>${esc(spec.footer ?? '盐城市公立医院改革与高质量发展示范项目 · 信息化全流程项目管控平台')}</span><span>打印时间：${nowStamp()}</span></div>
+  <div class="foot"><span>${esc(spec.footer ?? '公立医院改革与高质量发展示范项目 · 信息化全流程项目管控平台')}</span><span>打印时间：${nowStamp()}</span></div>
 </body></html>`
 
   printHtml(html)

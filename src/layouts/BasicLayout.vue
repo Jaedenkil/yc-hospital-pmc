@@ -2,10 +2,10 @@
   <a-layout class="app">
     <a-layout-sider class="app-sider" :width="220" theme="dark" :collapsed="collapsed" :collapsible="true" @collapse="collapsed = !collapsed">
       <div class="brand">
-        <div class="brand-mark">盐</div>
+        <div class="brand-mark">示</div>
         <div v-show="!collapsed" class="brand-text">
           <div class="t1">示范项目管控平台</div>
-          <div class="t2">盐城市公立医院改革 · 信息化</div>
+          <div class="t2">公立医院改革 · 信息化</div>
         </div>
       </div>
 

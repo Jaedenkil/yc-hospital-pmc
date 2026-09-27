@@ -595,10 +595,10 @@ async function submitForm() {
   formOpen.value = false
 }
 
-/** 新项目编号：沿用 YC-HI-2026-XXX 规则顺延 */
+/** 新项目编号：沿用 PM-2026-XXX 规则顺延 */
 function nextProjectId(): string {
   const maxSeq = Math.max(...allProjects().map((p) => Number(p.id.split('-').pop()) || 0))
-  return `YC-HI-2026-${pad(maxSeq + 1, 3)}`
+  return `PM-2026-${pad(maxSeq + 1, 3)}`
 }
 
 /** 新增项目：自动补齐四阶段子任务与中央资金批次，保证与台账口径自洽 */
@@ -743,11 +743,11 @@ function downloadTemplate() {
       header: IMPORT_HEADERS,
       rows: [
         [
-          '盐城市第一人民医院HIS系统升级改造',
+          '市第一人民医院HIS系统升级改造',
           '规划发展与信息化处',
-          '盐城市第一人民医院',
-          5600,
-          2400,
+          '市第一人民医院',
+          3300,
+          1400,
           '院内核心业务系统（HIS）架构升级、双活容灾与性能优化，覆盖门诊、住院、药房等模块。',
           '2026-11-01',
           '2028-06-30',

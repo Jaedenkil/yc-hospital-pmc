@@ -72,7 +72,7 @@ router.beforeEach((to) => {
 
 router.afterEach((to) => {
   const t = (to.meta.title as string) ?? ''
-  document.title = t ? `${t} · 示范项目管控平台` : '盐城市公立医院改革示范项目 · 信息化全流程项目管控平台'
+  document.title = t ? `${t} · 示范项目管控平台` : '公立医院改革示范项目 · 信息化全流程项目管控平台'
 })
 
 export default router

@@ -27,8 +27,13 @@ import { TODAY, addDays, daysBetween, minDate, pad, seedRandom } from './utils'
 
 export { TODAY }
 
-/** 项目规模档位（万元） */
-const INVEST_TIERS = [1200, 2400, 3800, 5600, 8200, 11500, 15800]
+/**
+ * 项目规模档位（万元）。
+ * 档位按整体缩放校准（约 0.594 倍），使 20 个子项目的
+ * 建设总投资合计约 10.4 亿元、中央专项资金合计约 4.9 亿元
+ * （中央资金占总投资比例结构不变，仍在 32%~62% 区间内取值）。
+ */
+const INVEST_TIERS = [710, 1425, 2255, 3325, 4870, 6825, 9380]
 
 /** 中央专项资金占总投资的比例区间 */
 const CENTRAL_RATIO: [number, number] = [0.32, 0.62]
@@ -194,8 +199,8 @@ export function buildProjects(): SubProject[] {
         : 'low'
 
     projects.push({
-      id: `YC-HI-2026-${pad(i + 1, 3)}`,
-      name: `${owner.replace('盐城市', '市')}${src.suffix}`,
+      id: `PM-2026-${pad(i + 1, 3)}`,
+      name: `${owner}${src.suffix}`,
       leadDept: DEPARTMENTS[i % DEPARTMENTS.length],
       owner,
       totalInvestment,

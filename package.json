@@ -1,9 +1,9 @@
 {
-  "name": "yc-hospital-pmc",
+  "name": "hospital-pmc",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "盐城市公立医院改革与高质量发展示范项目 · 信息化全流程项目管控平台（演示 Demo，全 mock 数据）",
+  "description": "公立医院改革与高质量发展示范项目 · 信息化全流程项目管控平台（演示 Demo，全 mock 数据）",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",

@@ -118,7 +118,7 @@
             <a-select v-model:value="form.level" :options="levelFormOptions" style="width: 100%" />
           </AFormItem>
           <AFormItem label="责任方" name="responsible">
-            <a-input v-model:value="form.responsible" placeholder="如：盐城市第一人民医院 张伟（单位 + 责任人）" />
+            <a-input v-model:value="form.responsible" placeholder="如：市第一人民医院 张伟（单位 + 责任人）" />
           </AFormItem>
           <AFormItem label="发现日期" name="foundDate">
             <a-date-picker

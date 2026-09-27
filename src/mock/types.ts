@@ -127,7 +127,7 @@ export const DOC_CATEGORIES: DocCategory[] = [
 
 /** 子项目（台账主表） */
 export interface SubProject {
-  /** 项目编号，如 YC-HI-2026-001 */
+  /** 项目编号，如 PM-2026-001 */
   id: string
   /** 项目名称 */
   name: string

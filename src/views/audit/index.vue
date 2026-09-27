@@ -227,7 +227,7 @@ function printOne(r: AuditRecord) {
     header: ['材料编号', '所属项目', '出具日期', '编制人'],
     rows: [[r.id, projectNameMap.get(r.projectId) ?? '', r.date, r.author]],
     align: ['center', 'left', 'center', 'center'],
-    footer: '数据来源：盐城市公立医院改革与高质量发展示范项目 · 跟踪审计台账（演示数据）',
+    footer: '数据来源：公立医院改革与高质量发展示范项目 · 跟踪审计台账（演示数据）',
   })
 }
 
@@ -284,7 +284,7 @@ function printLedger() {
     ]),
     align: ['center', 'center', 'left', 'left', 'center', 'center'],
     landscape: true,
-    footer: '数据来源：盐城市公立医院改革与高质量发展示范项目 · 跟踪审计台账（演示数据）',
+    footer: '数据来源：公立医院改革与高质量发展示范项目 · 跟踪审计台账（演示数据）',
   })
 }
 </script>

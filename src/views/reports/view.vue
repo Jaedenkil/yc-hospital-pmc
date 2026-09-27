@@ -70,7 +70,7 @@
         <!-- 页脚：数据来源 -->
         <div class="sheet-foot">
           <span>{{ def.source }}</span>
-          <span>盐城市公立医院改革与高质量发展示范项目 · 信息化全流程项目管控平台</span>
+          <span>公立医院改革与高质量发展示范项目 · 信息化全流程项目管控平台</span>
         </div>
       </div>
     </template>

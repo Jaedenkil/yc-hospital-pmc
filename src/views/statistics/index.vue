@@ -99,7 +99,7 @@
       <div class="pmc-card panel block">
         <div class="panel-head">
           <span class="panel-title">投资规模区间明细</span>
-          <span class="panel-tip">区间划分：3000 万元以下 / 3000 万~8000 万 / 8000 万~1.5 亿 / 1.5 亿以上</span>
+          <span class="panel-tip">区间划分：2000 万元以下 / 2000 万~5000 万 / 5000 万~9000 万 / 9000 万以上</span>
         </div>
         <a-table
           class="num-table"

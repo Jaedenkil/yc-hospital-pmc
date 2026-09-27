@@ -141,7 +141,7 @@
         </ADescriptions>
         <div class="pv-paper">
           <div class="pv-paper-head">{{ previewDoc.fileName }}</div>
-          <div class="pv-paper-sub">盐城市公立医院改革与高质量发展示范项目 · 信息化建设归档材料</div>
+          <div class="pv-paper-sub">公立医院改革与高质量发展示范项目 · 信息化建设归档材料</div>
           <div v-for="(w, i) in LINE_WIDTHS" :key="i" class="pv-line" :style="{ width: `${w}%` }"></div>
           <div class="pv-paper-foot">
             共 {{ pageCountOf(previewDoc.sizeKb) }} 页 · 预览区按材料版面结构展示，正式文件以归档原件为准
@@ -382,7 +382,7 @@ function printOne(doc: DocItem) {
       ['文件大小', `${doc.sizeKb} KB`],
     ],
     align: ['center', 'left'],
-    footer: '数据来源：盐城市公立医院改革与高质量发展示范项目 · 项目档案台账（演示数据）',
+    footer: '数据来源：公立医院改革与高质量发展示范项目 · 项目档案台账（演示数据）',
   })
 }
 

@@ -4,10 +4,10 @@
     <section class="hero">
       <div class="hero-inner">
         <div class="brand">
-          <div class="brand-logo">盐</div>
+          <div class="brand-logo">示</div>
           <div class="brand-text">
             <div class="brand-t1">示范项目管控平台</div>
-            <div class="brand-t2">盐城市公立医院改革与高质量发展示范项目</div>
+            <div class="brand-t2">公立医院改革与高质量发展示范项目</div>
           </div>
         </div>
 
@@ -25,7 +25,7 @@
         </ul>
 
         <div class="hero-foot">
-          <span>盐城市卫生健康委员会 · 规划发展与信息化处</span>
+          <span>市卫生健康委员会 · 规划发展与信息化处</span>
           <span class="dot"></span>
           <span>演示环境 · 数据为模拟数据</span>
         </div>

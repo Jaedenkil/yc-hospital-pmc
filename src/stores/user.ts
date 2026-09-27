@@ -125,7 +125,7 @@ interface AuthSnapshot {
 export const useUserStore = defineStore('user', () => {
   const role = ref<RoleCode>('owner-admin')
   const name = ref('李慧敏')
-  const org = ref('盐城市卫生健康委员会 · 规划发展与信息化处')
+  const org = ref('市卫生健康委员会 · 规划发展与信息化处')
 
   /** ---------------- 登录态（模块 8/9） ---------------- */
   const logged = ref(false)

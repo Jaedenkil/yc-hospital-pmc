@@ -14,10 +14,10 @@ export interface InvestRange {
 }
 
 export const INVEST_RANGES: InvestRange[] = [
-  { key: 'lt3000', label: '3000 万元以下', min: 0, max: 3000 * 10000 },
-  { key: '3000-8000', label: '3000 万 ~ 8000 万元', min: 3000 * 10000, max: 8000 * 10000 },
-  { key: '8000-15000', label: '8000 万 ~ 1.5 亿元', min: 8000 * 10000, max: 15000 * 10000 },
-  { key: 'gt15000', label: '1.5 亿元以上', min: 15000 * 10000, max: Number.POSITIVE_INFINITY },
+  { key: 'lt2000', label: '2000 万元以下', min: 0, max: 2000 * 10000 },
+  { key: '2000-5000', label: '2000 万 ~ 5000 万元', min: 2000 * 10000, max: 5000 * 10000 },
+  { key: '5000-9000', label: '5000 万 ~ 9000 万元', min: 5000 * 10000, max: 9000 * 10000 },
+  { key: 'gt9000', label: '9000 万元以上', min: 9000 * 10000, max: Number.POSITIVE_INFINITY },
 ]
 
 /** 判断投资额所属区间 */
